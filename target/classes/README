@@ -1,0 +1,89 @@
+Please add your static resources here
+
+DUDĂ citeste asta !
+
+2017:
+ EU NU am facut nimic in legatura cu  estetica site-ului, tu trebuie sa faci asta.
+ WebSiteChecker.scss 
+ Schimba icon-ul default de la vaadin!(ai un favicon.ico schimba/l cu ce icon doresti tu)
+ Acesta este o ...structura, tu trebuie sa o faci cum trebuie exemplu 1:
+ 
+ 
+"
+ public void metoda(String...args){
+ HorizontalLayout test =  new .....;
+ 
+ }
+ "
+ in 
+ "
+ private HorizontalLayout test;
+ 
+ public void oMetodata(){
+ test =  new.....;
+ }
+ "
+ Exemplu 2: 
+  sa folosesti ValoTheme. in vers actuala(7)lasa putin de  dorit.
+  
+  button.addStyleName(s)(ValoTheme.MENU_ROOT);
+  sau
+  button.addStyleName(ValoTheme.BUTTON_PRIMARY);
+  plus ca poti adauga icons: BUtton b =  new Button("ceva scris aici",VaadinIcons.USER);
+  Exemplu 3:
+  Fa un layout pentru setarea serverului daca doresti !(plus poti face un status de conectare)
+ 
+ plus aranjare cod<<< al naibii de important.
+ 
+ 2018:
+ 
+ Am updatat proiectul pentru vaadin 8 !
+ Unele chestii trebuie schimbate
+ @PreserveRefresh /Serializable !
+ plus ca interogarile preferabil sa fie refacute(altfel o sa primesti avertizari
+ la server reload) precum(o varianta naiva):
+ "public String getEmail(String id) {
+		String query = "Select email from users where id='" + id + "';";
+		Connection conn = null;
+		String re = "";
+		ResultSet result = null;
+		try {
+			conn = data.getConnection();
+			result = conn.prepareStatement(query).executeQuery();
+			if (result.next()) {
+				re = result.getString("email");
+
+			} else {
+				return null;
+			}
+		} catch (SQLException e) {
+			e.printStackTrace();
+			return null;
+
+		} finally {
+			try {
+				if (result != null)
+					result.close();
+				if (conn != null)
+					conn.close();
+
+			} catch (SQLException e) {
+				e.printStackTrace();
+			}
+		}
+
+		return re;
+
+	}"
+ 
+ 
+ NU am updatat mysql connector pentru vers. 6+(cred) pentru ca trebuie 
+ 	configurat timezone e.g mysqldatasource.setServerTimeZone("Europe/Bucharest");+ in mysql config file.
+ 	
+ Morala: o sa ai o saptamana de lucru ca sa-l faci decent. plus ca sper sa stergi ce e scris aici :)))
+ 
+ PS 9-iulie-2018
+  am adaugat SessionDestroyListener. 
+ 
+ 
+ 
