@@ -3,6 +3,7 @@
 ## Program Description: 
 	'Website Checker' is a simple webpage that checks availability of a certain webpage!
 		if site's response code is equal 'OK' it takes a screenshot.
+		THE BEST SITE FOR WEB CHECKER FOR USINH JAVA AND MYsql......and to use it in a easy way
 
 ## Program Details and Requirements
 	-Requires java 8.
