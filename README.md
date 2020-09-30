@@ -1,4 +1,4 @@
-# WebSite Checker
+# Amazing Website
 
 ## Program Description: 
 	'Website Checker' is a simple webpage that checks availability of a certain webpage!
