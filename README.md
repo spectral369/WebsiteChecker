@@ -7,7 +7,7 @@
 ## Program Details and Requirements
 	-Requires java 8.
 	-Requires MYSQL(mariadb) for storing user and website information.
-	-ScreenShot is based on chromedriver so it requires chromeium/chrome browser.
+	-ScreenShot is based on chromedriver so it requires chromium/chrome browser.
 	-Linux(ubuntu) only.
 	
 ![Simple Example1](https://i.imgur.com/ySi2jiA.png)
