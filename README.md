@@ -12,7 +12,7 @@
 	
 ![Simple Example1](https://i.imgur.com/ySi2jiA.png)
 	
-## What can this program do:
+## this program is able to do:
 	- Auto setup with admin account creation.
 	- Header with added websites status (Up/Down/Total) and MYSQL connection status.
 	- Basic login/signup.	
