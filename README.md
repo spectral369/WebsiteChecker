@@ -2,7 +2,7 @@
 
 ## Program Description: 
 	'Website Checker' is a simple webpage that checks availability of a certain webpage!
-		if site's response code is equal 'OK' it takes a screenshot.
+		if site's response code is equal 'OK' then  it takes a screenshot.
 
 ## Program Details and Requirements
 	-Requires java 8.
